@@ -35,8 +35,9 @@ export class ComponentTwo {
         import('./template-three').then(module => {
           this.showComponentOne = this.template_three;
           console.log(this.showComponentOne);
-          this.showComponentOne = <button onClick={() => alert()}>Template three here</button>;
-          console.log(this.showComponentOne);
+          // ---------> uncomment this and then it works  <------
+          // this.showComponentOne = <button onClick={() => alert()}>Template three here</button>;
+          // console.log(this.showComponentOne);
         });
 
         break;
