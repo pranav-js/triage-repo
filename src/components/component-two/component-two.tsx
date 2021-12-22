@@ -33,10 +33,10 @@ export class ComponentTwo {
         break;
       case 2:
         import('./template-three').then(module => {
-          this.showComponentOne = this.template_three;
+          this.showComponentOne = module.template_three;
           console.log(this.showComponentOne);
           // ---------> uncomment this and then it works  <------
-          // this.showComponentOne = <button onClick={() => alert()}>Template three here</button>;
+          // this.showComponentOne = this.template_three;
           // console.log(this.showComponentOne);
         });
 
