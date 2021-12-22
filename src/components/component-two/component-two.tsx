@@ -10,8 +10,6 @@ export class ComponentTwo {
   method: any;
   template: string = '';
 
-  template_three = (<button onClick={() => alert()}>Template three here</button>);
-
   constructor() {
     this.fetchComp(2);
   }
@@ -36,7 +34,7 @@ export class ComponentTwo {
           this.showComponentOne = module.template_three;
           console.log(this.showComponentOne);
           // ---------> uncomment this and then it works  <------
-          // this.showComponentOne = this.template_three;
+          // this.showComponentOne = <button onClick={() => alert()}>Template three here</button>;
           // console.log(this.showComponentOne);
         });
 
